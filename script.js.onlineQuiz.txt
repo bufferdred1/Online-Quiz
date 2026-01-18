@@ -13,7 +13,7 @@
  },
  
  { 
-  question: "in the DC comic books, the Superhero Wonder Woman has the Laso of what?",
+ question: "In the DC comic books, the Superhero Wonder Woman has the Laso of what?",
  answers: [
  
  { text: "Lies", correct: false},
@@ -27,7 +27,7 @@
  
  },
  {
-  question: "in the DC comic books for Superheroes, which planet is Superman from?",
+ question: "In the DC comic books for Superheroes, which planet is Superman from?",
  answers: [
  
  { text: "Mars", correct: false},
@@ -40,7 +40,7 @@
  },
  
  {
-  question: "in the DC comic books for Superheroes, what do the superheroes call their team group?",
+ question: "In the DC comic books for Superheroes, what do the superheroes call their team group?",
  answers: [
  
  { text: "The Justice League", correct: true},
@@ -56,7 +56,7 @@
   question: "Which city do Batman and Robin protect?",
  answers: [
  
- { text: "Manhhaten", correct: false},
+ { text: "Manhhatan", correct: false},
  { text: "Newyork City", correct: false},
  { text: "Texas", correct: false},
  { text: "Gotham City", correct: true},
@@ -134,9 +134,9 @@
  
  ];
  
- const questinElement = document.getElementById("question");
- const answerButton   = document.getElementById("answer-buttons");
- const nextButton     = document.getElementById("next-btn");
+ const questionElement = document.getElementById("question");
+ const answerButtons   = document.getElementById("answer-buttons");
+ const nextButton      = document.getElementById("next-btn");
  
  let currentQuestionIndex = 0;
  let score                = 0;
@@ -149,6 +149,8 @@
  }
  
  function showQuestion(){
+ resetState();
+ 
  let currentQuestion       = questions[currentQuestionIndex];
  let questionNo            = currentQuestionIndex + 1;
  questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -157,8 +159,42 @@
  const button     = document.createElement("button");
  button.innerHTML = answer.text;
  button.classList.add(btn");
- answerButton.appendChild(button);
+ answerButtons.appendChild(button);
+ if(answer.correct){
+ button.dataset.correct = answer.correct;
+ 
+ }
+ button.addEventListner("click", selectAnswer);
  
  });
+ 
  }
+ 
+ function resetState(){
+ nextButton.stayle.display = "none";
+ while(answerButtons.firstChild){
+ answerButtons.removeChild(answerButtons.firstChild);
+ }
+ }
+ 
+ function selectAnswer(e){
+ const selectBtn = e.target;
+ const isCorrect = selectBtn.dataset.correct === "true";
+ if(isCorrect){
+ selectBtn.classList.add("correct");
+ }else{
+ selectedBtn.classList.add("incorrect";
+ 
+ }
+ Array.from(answerButtons.children).forEach(button => {
+ if(button.dataset.correct === "true"){
+ button.classList.add("correct");
+  }
+  button.disabled = true;
+  });
+  nextButton.style.display = "block";
+  
+  }
+  
+ startQuiz(); 
  
