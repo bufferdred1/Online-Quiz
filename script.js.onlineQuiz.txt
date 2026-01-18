@@ -171,7 +171,7 @@
  }
  
  function resetState(){
- nextButton.stayle.display = "none";
+ nextButton.style.display = "none";
  while(answerButtons.firstChild){
  answerButtons.removeChild(answerButtons.firstChild);
  }
@@ -198,3 +198,4 @@
   
  startQuiz(); 
  
+
