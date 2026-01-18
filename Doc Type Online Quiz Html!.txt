@@ -18,7 +18,7 @@
 
 <div class="quiz">
 
-<h2 id="question">Who is clark kent?</h2>
+<h2 id="question">DC comic book superhero quiz?</h2>
 
 <div id="answer-buttons">
 
