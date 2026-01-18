@@ -2,11 +2,11 @@
 
 
 body {
-background-color: skyblue;
+background-color: white;
 }
 
 .app{
-background:
+background: skyblue;
 width: 90%;
 max-width: 600px;
 margin: 100px auto 0:
@@ -15,9 +15,9 @@ padding: 30px;
 }
 
 .app h1{
-font-size:
-color:
-font-weight:
+font-size: 18px;
+color: yellow;
+font-weight: 
 border-bottom: 1px solid gold;
 padding-bottom: 30px;
 }
@@ -33,7 +33,7 @@ font-weight: 600;
 }
 
 .btn{
-background: skyblue;
+background: green;
 color: tomato;
 font-weight: 500;
 width: 100%
@@ -47,7 +47,7 @@ transition: all 0.3s;
 }
 
 .btn:hover{
-background: blue:
+background: gold:
 color: tomato;
 }
 
@@ -64,3 +64,10 @@ cursor: pointer;
 display: none;
 }
 
+.correct{
+background: green:
+}
+
+.incorect{
+background: pink;
+}
