@@ -18,7 +18,7 @@
 
 <div class="quiz"> 
 
-<h2 id="question">🦸🏿 DC comic book superhero quiz?</h2>
+<h2 id="question">🦸🏿 Question goes here</h2>
 
 <div id="answer-buttons">
 
@@ -36,3 +36,4 @@
 <script src="script.js.onlineQuiz.txt></script>
 </body> 
 </html>
+
