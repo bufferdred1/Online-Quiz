@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+// the app in the div tags // 
 <div class="app">
 
 <h1>Comic Books</h1>
@@ -22,13 +22,18 @@
 
 <div id="answer-buttons">
 
+// answer buttons created for a multi choice //
+
+
 <button class="btn">Answer 1</button>
 <button class="btn">Answer 2</button>
 <button class="btn">Answer 3</button>
 <button class="btn">Answer 4</button>
 <button class="btn">Answer 5</button>
 
-</div>  
+</div>
+
+// the next button with an id //
 <button id="next-btn">Next</button>
 </div>
 
@@ -36,4 +41,5 @@
 <script src="script.js.onlineQuiz.txt></script>
 </body> 
 </html>
+
 
