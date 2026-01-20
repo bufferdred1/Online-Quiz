@@ -194,8 +194,8 @@
   });
   nextButton.style.display = "block";
   
+  
   }
   
  startQuiz(); 
  
-
