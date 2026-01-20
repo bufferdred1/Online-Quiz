@@ -7,11 +7,11 @@ box-sizing: border-box;
 
 
 body {
-background-color: skyblue;
+background-color: blue;
 }
 
 .app{
-background: white;
+background: blue;
 width: 90%;
 max-width: 600px;
 margin: 100px auto 0:
@@ -76,4 +76,5 @@ background: green:
 .incorect{
 background: pink;
 }
+
 
